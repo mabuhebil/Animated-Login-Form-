@@ -1,0 +1,22 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,
+html{
+    display: grid;
+    min-height: 100vh; 
+    width: 100%;
+    place-items: center ;
+    background: linear-gradient(to right , #99004D 0% ,#ff0080 100%);
+}
+.container{
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15) ;
+}
