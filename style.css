@@ -20,3 +20,63 @@ html{
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15) ;
 }
+.container form .input_box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+}
+.container form .title{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+.container form .title::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    bottom: 10px;
+    left: 0;
+    border-radius: 5px;
+    background: linear-gradient(to right , #99004D 0% ,#ff0080 100%);
+}
+.container form .input_box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+.container form .underline::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+.container form .underline::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right , #99004D 0% ,#ff0080 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+.container form .input_box input:focus ~ .underline::after,
+.container form .input_box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.container form .input_box input[type="submit"]{
+    font-size: 17px;
+    color: #fff;
+    background: linear-gradient(to right , #99004D 0% ,#ff0080 100%);
+    cursor: pointer;
+}
