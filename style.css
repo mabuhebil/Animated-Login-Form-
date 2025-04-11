@@ -112,17 +112,27 @@ html{
     width: 35px;
     margin-bottom: -7px;
 }
+.twitter,
+.facebook{
+    transition: all 0.3s ease;
+}
 .container .twitter a{
     margin: 20px 0 15px 0;
     background: linear-gradient(to left , #00acee 0% ,#1abeff 100%);
+    cursor: pointer;
 }
-.container .twitter a:hover{
+.container .twitter a:hover,
+.twitter
+{
     background: linear-gradient(to right , #00acee 0% ,#1abeff 100%);
 }
 .container .facebook a{
     margin: 20px 0 50px 0;
     background: linear-gradient(to left , #3b5998 0% ,#476bb8 100%);
+    cursor: pointer;
 }
-.container .facebook a:hover{
+.container .facebook a:hover ,
+.facebook
+{
     background: linear-gradient(to right , #3b5998 0% ,#476bb8 100%);
 }
